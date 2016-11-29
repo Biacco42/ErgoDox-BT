@@ -18,7 +18,7 @@ deploy:
     - script:
         name: put built hex file to bintray.
         code: |
-          curl -T $WERCKER_SOURCE_DIR/ergodox_bt.hex -u$BINTRAY_USERNAME:$BINTRAY_APIKEY https://api.bintray.com/content/$BINTRAY_USERNAME/generic/ergodox.hex/$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT/ergodox_bt.hex
+          curl -T $WERCKER_SOURCE_DIR/ergodox_bt.hex -u$BINTRAY_USERNAME:$BINTRAY_APIKEY https://api.bintray.com/content/$BINTRAY_USERNAME/generic/ergodox_bt.hex/$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT/ergodox_bt.hex
     - script:
         name: publish uploaded hex file.
         code: |
